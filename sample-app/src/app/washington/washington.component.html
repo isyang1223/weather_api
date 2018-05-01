@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+  <div ng-controller="ExampleController">
+    <h3>Washington, {{city.name}}</h3>
+    <p>Humidity: {{city.main.humidity}}</p>
+    <p>Temp(Avg): {{city.main.temp}}</p>
+    <p>Temp(High): {{city.main.temp_max}}</p>
+    <p>Temp(Low): {{city.main.temp_min}}</p>
+    <p *ngFor="let x of city.weather">Status: {{x.description}} </p>
+  </div>
+
+</body>
+
+</html>
